@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'e-Ukraine';
+    src: url('Fonts/e-Ukraine/e-Ukraine-Regular.eot');
+    src: url('Fonts/e-Ukraine/e-Ukraine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Fonts/e-Ukraine/e-Ukraine-Regular.woff2') format('woff2'),
+        url('Fonts/e-Ukraine/e-Ukraine-Regular.woff') format('woff'),
+        url('Fonts/e-Ukraine/e-Ukraine-Regular.ttf') format('truetype'),
+        url('Fonts/e-Ukraine/e-Ukraine-Regular.svg#e-Ukraine-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root{
+    --accent-color: #308d47;
+    --accent-dark:#28743b;
+    --dropdown-bg: #212529;
+    --dropdown-border-color: #191929;
+    --s-text:rgb(194, 194, 194);
+    --color1: #1e1e1e;
+    --color2: #252526;
+    --color3: #333333;
+    --font-color: #fff;
+    --error-color: #dc3545;
+    --yellow-color: #ffc107;
+    --hover-bg: #313030;
+    --box-shadow: 0 0 0 .25rem #1e9b3e5f;
+    --box-error-shadow: 0 0 0 .25rem #dc35455f
+}
+
+body{
+    font-family:'e-Ukraine';
+    background-color: var(--color1);
+    color: var(--font-color);
+    --bs-body-color: var(--font-color);
+    --bs-border-color: var(--color2);
+}
+
+.account-container{
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.reg-link{
+    display: inline-block;
+    color: var(--accent-color)
+}
+.reg-link:hover{
+    text-decoration: underline;
+}
+
+.btn-accent{
+    --bs-btn-color: var(--font-color);
+    --bs-btn-bg: var(--accent-color);
+    --bs-btn-hover-color: var(--font-color);
+    --bs-btn-hover-bg: var(--accent-dark);
+}
+
+.form-control:focus, .form-select:focus, .form-check-input:focus{
+    box-shadow: var(--box-shadow);
+    background-color: var(--color3);
+    border-color: var(--color2);
+    color: var(--font-color)
+}
+
+.form-control, .form-select{
+    background-color: var(--color3);
+    border-color: var(--color2);
+    color: var(--font-color)
+}
+
+.form-check-input:checked {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.header{
+    color: var(--accent-color);
+}
+
+.input-group-text{
+    --bs-tertiary-bg: var(--color3);
+}
+
+.form-text{
+    color: var(--s-text);
+}
+
+.form-error{
+    color: var(--error-color);
+}
