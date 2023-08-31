@@ -1,10 +1,9 @@
 import { error, fail, redirect } from '@sveltejs/kit';
 import { create, getToken } from '$lib/server/requests.js'
-import { formToObj, sendCallback } from '$lib/features.js'
+import { formToObj } from '$lib/features.js'
 
 let emailCheck = new RegExp(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
 let usernameCheck = new RegExp(/^[A-Za-z][A-Za-z0-9_]{2,}$/)
-
 
 function validateInput(data: FormData){
 	if(!data.get("username")?.match(usernameCheck)) throw new Error("Bad username");
@@ -25,13 +24,14 @@ export const actions = {
 			if(err.status && err.status != 409 && err.status != 401){
 				throw err;
 			}
+			if(err.status == 401){
+				throw redirect(303, `./info?${url.searchParams.toString()}`);
+			}
 			return fail(422,{
 				error: err.message || err.body?.message,
 				data: formToObj(formData)
 			});
 		}
-		const token = await getToken(formData.get("username"), formData.get("password"));
-		throw redirect(303,
-			`${url.searchParams.get("redirect_uri") || "" }?state=${url.searchParams.get("state")}&code=${token}`);
+		throw redirect(303, `/register/info?${url.searchParams.toString()}`);
 	}
 }

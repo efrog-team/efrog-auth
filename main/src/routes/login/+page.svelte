@@ -34,6 +34,11 @@
                     Немає облікового запису? <a class="nav-link reg-link" href="/register?{$page.url.searchParams.toString()}">Зареєструватись</a>
                 </p>
             </div>
+            <div class="mb-3">
+                <p class="form-text">
+                    Забули пароль? <a class="nav-link reg-link" href="/reset-password?{$page.url.searchParams.toString()}">Відновити</a>
+                </p>
+            </div>
         </form>
     </div>
 </div>

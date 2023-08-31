@@ -1,6 +1,6 @@
 import { fail, redirect, error } from '@sveltejs/kit';
 import { getToken } from '$lib/server/requests.js'
-import { formToObj,  sendCallback } from '$lib/features.js'
+import { formToObj } from '$lib/features.js'
 
 function validateInput(data: FormData){
 	if(!data.get("username")) throw new Error("Username is required");
