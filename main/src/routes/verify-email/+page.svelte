@@ -11,7 +11,7 @@
             {#if !data.token}
             <div class="mb-4">
                 <label for="token" class="form-label">Your activation token</label>
-                <input type="text" name="token" class="form-control" id="token" value = {data.token || form?.data?.token || null}>
+                <input type="text" name="token" class="form-control" id="token" value = {data.token || form?.data?.token || null} autocomplete="off">
             </div>
             {/if}
             
