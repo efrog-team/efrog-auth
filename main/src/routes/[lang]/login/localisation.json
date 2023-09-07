@@ -1,0 +1,16 @@
+{
+    "en": {
+        "header": "Login",
+        "username": "Username",
+        "password": "Password",
+        "submit": "Submit",
+        "no_account": "Don't have an account?",
+        "register": "Register",
+        "password_forgot": "Forgot your password?",
+        "restore": "Restore",
+        "errors": {
+            "username": "Please enter your username",
+            "password": "Please enter your password"
+        }
+    }
+}

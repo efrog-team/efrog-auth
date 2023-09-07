@@ -1,0 +1,9 @@
+{
+    "en": {
+        "header": "Verify Your Email",
+        "code_info": "We've sent an activation token to your email. Please follow the link in the email to confirm your email address.",
+        "open_problem": "If you're unable to open the link directly from your email, please use the",
+        "alternative_link": "alternative link", 
+        "submit": "Done"
+    }
+}

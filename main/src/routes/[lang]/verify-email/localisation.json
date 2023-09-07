@@ -1,0 +1,7 @@
+{
+    "en" : {
+        "header": "Verify Email",
+        "token": "Your Activation Token",
+        "submit": "Verify"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "en" : {
+        "header" : "Register",
+        "username": "Username",
+        "username_help": "Your unique username (at least 3 characters)",
+        "name": "Name",
+        "name_help": "Your full name",
+        "email": "Email Address",
+        "password": "Password",
+        "password_help": "At least 8 characters",
+        "password_repeat": "Repeat Password",
+        "agreement": "I agree to the Terms and Conditions",
+        "submit": "Submit",
+        "have_an_account": "Already Have an Account?",
+        "login": "Login",
+        "errors": {
+            "username": "Please choose a valid username (at least 3 characters)",
+            "name": "Please provide your full name",
+            "email": "Please enter a valid email address",
+            "password": "Your password should contain at least 8 characters",
+            "password_repeat": "The passwords you entered do not match",
+            "agreement": "Please accept the terms and conditions to proceed"
+        }
+    }
+}

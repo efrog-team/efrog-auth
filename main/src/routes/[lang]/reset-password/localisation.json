@@ -1,0 +1,11 @@
+{
+    "en": {
+        "header": "Reset Password",
+        "email": "Email Address",
+        "email_help": "You will receive a reset token on this email",
+        "submit": "Submit",
+        "errors": {
+            "email": "Please enter a valid email address"
+        }
+    }
+}

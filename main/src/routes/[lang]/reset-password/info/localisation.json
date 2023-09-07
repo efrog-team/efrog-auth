@@ -1,0 +1,9 @@
+{
+    "en": {
+        "header": "Reset Password",
+        "code_info": "We have sent a reset token to your email. Please follow the attached link to reset your password.",
+        "open_problem": "If you're unable to open the link directly from your email, please use the",
+        "alternative_link": "alternative link", 
+        "submit": "Done"
+    }
+}

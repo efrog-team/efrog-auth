@@ -9,7 +9,7 @@ export function load({url}) {
 }
 
 export const actions = {
-	default: async ({ request, url}) => {
+	default: async ({ request, url, params}) => {
 		const formData = await request.formData();
 		try{
 			await verify(formData.get("token") || url.searchParams.get("token") || "");
@@ -22,6 +22,6 @@ export const actions = {
 				data: formToObj(formData)
 			});
 		}
-		throw redirect(303, "/verify-email/success");
+		throw redirect(303, `/${params.lang}/verify-email/success`);
 	}
 }
