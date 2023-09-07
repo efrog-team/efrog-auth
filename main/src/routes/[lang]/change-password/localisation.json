@@ -9,5 +9,16 @@
             "password": "Your password should contain at least 8 characters",
             "password_repeat": "The passwords you entered do not match"
         }
+    },
+    "uk" : {
+        "header": "Встановлення нового пароля",
+        "token": "Ваш код скидання пароля",
+        "password": "Новий пароль",
+        "password_repeat": "Повторіть пароль",
+        "submit": "Надіслати",
+        "errors": {
+            "password": "Ваш пароль повинен містити щонайменше 8 символів",
+            "password_repeat": "Введені паролі не співпадають"
+        }
     }
 }

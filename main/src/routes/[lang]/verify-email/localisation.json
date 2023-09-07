@@ -3,5 +3,10 @@
         "header": "Verify Email",
         "token": "Your Activation Token",
         "submit": "Verify"
+    },
+    "uk": {
+        "header": "Підтвердження електронної пошти",
+        "token": "Ваш код активації",
+        "submit": "Підтвердити"
     }
 }

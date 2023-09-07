@@ -12,5 +12,19 @@
             "username": "Please enter your username",
             "password": "Please enter your password"
         }
+    },
+    "uk": {
+        "header": "Увійти",
+        "username": "Ім'я користувача",
+        "password": "Пароль",
+        "submit": "Увійти",
+        "no_account": "Не маєте облікового запису?",
+        "register": "Зареєструватись",
+        "password_forgot": "Забули пароль?",
+        "restore": "Відновити",
+        "errors": {
+            "username": "Будь ласка, введіть ім'я користувача",
+            "password": "Будь ласка, введіть пароль"
+        }
     }
 }

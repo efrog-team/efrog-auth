@@ -2,5 +2,9 @@
     "en" : {
         "header": "Your Email is Verified",
         "info": "Please return to the previous page and click <b>Done</b> to continue."
+    },
+    "uk": {
+        "header": "Ваша електронна пошта підтверджена",
+        "info": "Будь ласка, поверніться на попередню сторінку і натисніть <b>Готово</b>, щоб продовжити."
     }
 }

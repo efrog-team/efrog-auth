@@ -5,5 +5,12 @@
         "open_problem": "If you're unable to open the link directly from your email, please use the",
         "alternative_link": "alternative link", 
         "submit": "Done"
+    },
+    "uk": {
+        "header": "Підтвердіть свою електронну пошту",
+        "code_info": "Ми відправили активаційний код на вашу електронну пошту. Будь ласка, перейдіть за посиланням в електронному листі, щоб підтвердити свою адресу електронної пошти.",
+        "open_problem": "Якщо ви не можете відкрити посилання безпосередньо з вашої електронної пошти, скористайтесь",
+        "alternative_link": "альтернативним посиланням",
+        "submit": "Готово"
     }
 }

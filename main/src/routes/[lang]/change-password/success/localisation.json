@@ -2,5 +2,9 @@
     "en" : {
         "header": "Your Password has been Changed",
         "info": "Please return to the previous page and click <b>Done</b> to continue."
+    },
+    "uk" : {
+        "header": "Ваш пароль був змінений",
+        "info": "Будь ласка, поверніться на попередню сторінку та натисніть <b>Готово</b>, щоб продовжити."
     }
 }

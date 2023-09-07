@@ -5,5 +5,12 @@
         "open_problem": "If you're unable to open the link directly from your email, please use the",
         "alternative_link": "alternative link", 
         "submit": "Done"
+    },
+    "uk": {
+        "header": "Скидання пароля",
+        "code_info": "Ми відправили вам код скидання пароля на вашу електронну пошту. Будь ласка, перейдіть за посиланням в електронному листі, щоб скинути свій пароль.",
+        "open_problem": "Якщо ви не можете відкрити посилання безпосередньо з вашої електронної пошти, скористайтесь",
+        "alternative_link": "альтернативним посиланням",
+        "submit": "Готово"
     }
 }
