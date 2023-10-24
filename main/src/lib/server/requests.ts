@@ -13,7 +13,7 @@ async function request(method:string, url: string , data: any){
 
     // if there is an Internal Server Error
     if(response.status == 500){
-        throw error(500, response.statusText)
+        throw error(500, response.statusText+"*")
     }
 
     const json = await response.json();
@@ -38,9 +38,13 @@ export async function verify(token: string){
 }
 
 export async function resetPassword(email: string) {
-    await request("GET", `/users/password/reset/token/email/${email}`, null)
+    await request("GET", `/users/password/reset/token/email/${email}`, null);
 }
 
 export async function newPassword(token: string, password: string){
     await request("POST", `/users/password/reset`, {token, password});
+}
+
+export async function resendToken(email: string){
+    await request("GET", `/users/email/${email}/resend-token`, null);
 }

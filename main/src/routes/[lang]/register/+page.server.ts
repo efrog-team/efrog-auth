@@ -35,6 +35,6 @@ export const actions = {
 				data: formToObj(formData)
 			});
 		}
-		throw redirect(303, `/${params.lang}/register/info?${url.searchParams.toString()}`);
+		throw redirect(303, `/${params.lang}/register/info?${url.searchParams.toString()}&email=${formData.get("email")}`);
 	}
 }

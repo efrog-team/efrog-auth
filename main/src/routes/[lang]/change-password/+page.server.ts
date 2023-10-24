@@ -10,7 +10,7 @@ export function load({url}) {
 }
 
 function validateInput(data: FormData, lang: string) {
-	let loc = locs[lang].errors;
+	let loc = locs[lang as keyof typeof locs].errors;
 
 	if(data.get("password")?.length < 8) throw new Error(loc.password);
 	if(data.get("passwordRepeat") != data.get("password")) throw new Error(loc.password_repeat);

@@ -22,7 +22,7 @@
             {#if form?.error}
                 <div class="form-error form-text mb-3">{form.error}</div>
             {/if}
-            <div class="mb-5">
+            <div class="mb-4">
                 <button type="submit" class="btn btn-accent">{loc.submit}</button>
             </div>
         </form>
