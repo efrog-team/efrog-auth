@@ -49,10 +49,10 @@
                     </button>
                 </div>
             </div>
-            <div class="my-4 form-check">
+            <!-- <div class="my-4 form-check">
                 <input type="checkbox" class="form-check-input" id="agree" name="agree" checked={!!form?.data?.agree}>
                 <label class="form-check-label" for="agree">{loc.agreement}</label>
-            </div>
+            </div> -->
             {#if form?.error}
                 <div class="form-error form-text mb-3">{form.error}</div>
             {/if}

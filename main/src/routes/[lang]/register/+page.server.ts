@@ -14,7 +14,7 @@ function validateInput(data: FormData, lang: string){
 	if(!data.get("email")?.match(emailCheck)) throw new Error(loc.email);
 	if(data.get("password")?.length < 8) throw new Error(loc.password);
 	if(data.get("passwordRepeat") != data.get("password")) throw new Error(loc.password_repeat);
-	if(!data.get("agree")) throw new Error(loc.agreement);
+	//if(!data.get("agree")) throw new Error(loc.agreement);
 }
 
 export const actions = {
