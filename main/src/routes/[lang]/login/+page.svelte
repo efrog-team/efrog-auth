@@ -21,9 +21,9 @@
                 <label for="password" class="form-label">{loc.password}</label>
                 <div class="input-group">
                     <input type={passVisible ? "text":"password"} class="form-control" id="password" name="password" value={form?.data?.password || null}>
-                    <button class="input-group-text" on:click|preventDefault={()=>{passVisible = !passVisible}}>
+                    <span class="input-group-text" on:keypress={()=>{passVisible = !passVisible}} role="button" tabindex="-1">
                         <i class="bi-eye{passVisible ? '-slash': ''}"></i>
-                    </button>
+                    </span>
                 </div>
             </div>
             {#if form?.error}
