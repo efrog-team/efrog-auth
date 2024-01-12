@@ -15,12 +15,12 @@
         <form action="" method="post" novalidate>
             <div class="mb-3">
                 <label for="username" class="form-label">{loc.username}</label>
-                <input type="text" name="username" class="form-control" id="username" value = {form?.data?.username || null}>
+                <input type="text" name="username" class="form-control" id="username" value = {form?.data?.username || null} autocomplete="username">
             </div>
             <div class="mb-4">
                 <label for="password" class="form-label">{loc.password}</label>
                 <div class="input-group">
-                    <input type={passVisible ? "text":"password"} class="form-control" id="password" name="password" value={form?.data?.password || null}>
+                    <input type={passVisible ? "text":"password"} class="form-control" id="password" name="password" value={form?.data?.password || null} autocomplete="current-password">
                     <button type="button" class="input-group-text" on:click={()=>{passVisible = !passVisible}} tabindex="-1">
                         <i class="bi-eye{passVisible ? '-slash': ''}"></i>
                     </button>

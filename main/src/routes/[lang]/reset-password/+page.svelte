@@ -10,10 +10,10 @@
 </div>
 <div class="mb-4">
     <div>
-        <form action="" method="post" novalidate>
+        <form method="post" novalidate>
             <div class="mb-4">
                 <label for="email" class="form-label">{loc.email}</label>
-                <input type="text" name="email" class="form-control" id="email" value = {form?.data?.email || null}>
+                <input type="text" name="email" class="form-control" id="email" value = {form?.data?.email || null} autocomplete="email">
                 <div class="form-text">{loc.email_help}</div>
             </div>
             {#if form?.error}

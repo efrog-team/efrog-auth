@@ -16,25 +16,25 @@
 </div>
 <div class="mb-4">
     <div >
-        <form action="" method="post" autocomplete="off" novalidate>
+        <form action="" method="post"novalidate>
             <div class="mb-3">
                 <label for="username" class="form-label">{loc.username}</label>
-                <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" value={form?.data?.username || null}>
+                <input type="text" name="username" class="form-control" id="username" aria-describedby="usernameHelp" value={form?.data?.username || null} autocomplete="username">
                 <div id="usernameHelp" class="form-text">{loc.username_help}</div>
             </div>
             <div class="mb-3">
                 <label for="name" class="form-label">{loc.name}</label>
-                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value={form?.data?.name || null}>
+                <input type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" value={form?.data?.name || null} autocomplete="name">
                 <div id="nameHelp" class="form-text">{loc.name_help}</div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">{loc.email}</label>
-                <input type="email" name = "email" class="form-control" id="email" value={form?.data?.email || null}>
+                <input type="email" name = "email" class="form-control" id="email" value={form?.data?.email || null} autocomplete="email">
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">{loc.password}</label>
                 <div class="input-group">
-                    <input type={passVisible ? "text":"password"} class="form-control" id="password" name="password" value={form?.data?.password || null}>
+                    <input type={passVisible ? "text":"password"} class="form-control" id="password" name="password" value={form?.data?.password || null} autocomplete="new-password">
                     <button class="input-group-text" on:click|preventDefault={()=>{passVisible = !passVisible}}>
                         <i class="bi-eye{passVisible ? '-slash': ''}"></i>
                     </button>
@@ -43,7 +43,7 @@
             <div class="mb-3">
                 <label for="password-repeat" class="form-label">{loc.password_repeat}</label>
                 <div class="input-group">
-                    <input type={passRepeatVisible ? "text":"password"} class="form-control" id="password-repeat" name="passwordRepeat" value={form?.data?.passwordRepeat || null}>
+                    <input type={passRepeatVisible ? "text":"password"} class="form-control" id="password-repeat" name="passwordRepeat" value={form?.data?.passwordRepeat || null} autocomplete="new-password">
                     <button class="input-group-text" on:click|preventDefault={()=>{passRepeatVisible = !passRepeatVisible}}>
                         <i class="bi-eye{passRepeatVisible ? '-slash': ''}"></i>
                     </button>

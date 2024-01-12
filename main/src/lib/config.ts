@@ -1,4 +1,4 @@
-export const serverUrl = "http://localhost:8000";
+export const serverUrl = "https://api.efrog.pp.ua";
 
 export let localisations = [
     "en",
