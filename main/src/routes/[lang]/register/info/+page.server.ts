@@ -1,5 +1,5 @@
 export function load({url}) {
-    return {
-        email: url.searchParams.get("email") || null
-    }
+	return {
+		email: url.searchParams.get("email") || null
+	};
 }
